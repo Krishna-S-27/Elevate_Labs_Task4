@@ -1,4 +1,4 @@
-# 📌 Flask REST API with Persistent Storage
+## Flask REST API with Persistent Storage
 
 This project is a simple **Flask-based REST API** that allows you to perform **CRUD operations** on user data.  
 The data is **persistently stored in a JSON file** (`users.json`), so it is not lost when the server restarts.  
@@ -6,7 +6,7 @@ We have used **Postman** for testing all endpoints.
 
 ---
 
-## 🚀 Features
+### Features
 - **GET**: Retrieve all users or a specific user by ID
 - **POST**: Create a new user
 - **PUT**: Update existing user details
@@ -18,7 +18,8 @@ We have used **Postman** for testing all endpoints.
 ##  API Endpoints
 
 1. Get All Users
-Request     GET /users
+Request
+GET /users
 Response
 {
     "1": {
@@ -29,8 +30,9 @@ Response
     }
 }
 
-2. Get Single User by ID
-Request  GET /users/1
+3. Get Single User by ID
+Request
+GET /users/1
 Response
 {
     "name": "Krishna Shalwadi",
@@ -39,8 +41,9 @@ Response
     "place": "Bengaluru"
 }
 
-3. Create New User
-Request  POST /users
+5. Create New User
+Request
+POST /users
 Content-Type: application/json
 
 Body
@@ -57,7 +60,8 @@ Response
 
 
 4. Update User
-Request PUT /users/1
+Request
+PUT /users/1
 Content-Type: application/json
 Body
 {
@@ -67,8 +71,9 @@ Response
 {
     "message": "User updated"
 }
-5. Delete User
-Request DELETE /users/1
+6. Delete User
+Request
+DELETE /users/1
 Response
 {
     "message": "User deleted"
